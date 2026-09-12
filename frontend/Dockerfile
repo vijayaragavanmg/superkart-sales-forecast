@@ -12,4 +12,4 @@ COPY app.py .
 EXPOSE 8501
 
 # Launch the Streamlit app, reachable from outside the container
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
